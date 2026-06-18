@@ -6,9 +6,9 @@ import { BrandStatement } from "@/components/site/BrandStatement";
 export const Route = createFileRoute("/contact")({
   head: () => ({
     meta: [
-      { title: "orlint" },
+      { title: "Orlint" },
       { name: "description", content: "Tell us what you're looking for. Every enquiry is handled personally and discreetly." },
-      { property: "og:title", content: "orlint" },
+      { property: "og:title", content: "Orlint" },
       { property: "og:description", content: "Request an introduction." },
       { property: "og:url", content: "/contact" },
     ],

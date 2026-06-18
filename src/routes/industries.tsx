@@ -5,9 +5,9 @@ import { SectionHeading } from "@/components/site/SectionHeading";
 export const Route = createFileRoute("/industries")({
   head: () => ({
     meta: [
-      { title: "orlint" },
+      { title: "Orlint" },
       { name: "description", content: "Orlint works with business owners, solution providers, consultancies, staffing firms, partnership teams, and enterprise buyers across industries." },
-      { property: "og:title", content: "orlint" },
+      { property: "og:title", content: "Orlint" },
       { property: "og:description", content: "Who we work with." },
       { property: "og:url", content: "/industries" },
     ],
