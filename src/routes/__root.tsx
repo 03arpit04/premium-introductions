@@ -77,9 +77,9 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Orlint — Connecting Opportunity With Capability" },
+      { title: "orlint" },
       { name: "description", content: "Orlint helps businesses discover the right partners, solution providers, and opportunities through meaningful introductions." },
-      { property: "og:title", content: "Orlint — Connecting Opportunity With Capability" },
+      { property: "og:title", content: "orlint" },
       { property: "og:description", content: "We bring. You close. Premium business introductions for serious decision makers." },
       { property: "og:type", content: "website" },
       { property: "og:site_name", content: "Orlint" },
@@ -87,6 +87,8 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     ],
     links: [
       { rel: "stylesheet", href: appCss },
+      { rel: "icon", type: "image/jpeg", href: "/favicon.jfif" },
+      { rel: "shortcut icon", type: "image/jpeg", href: "/favicon.jfif" },
       { rel: "preconnect", href: "https://fonts.googleapis.com" },
       { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "anonymous" },
       {
