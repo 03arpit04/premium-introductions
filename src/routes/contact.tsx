@@ -38,8 +38,8 @@ function ContactPage() {
             <div className="space-y-10">
               <div>
                 <div className="text-[11px] uppercase tracking-[0.25em] text-muted-foreground">Email</div>
-                <a href="mailto:hello@orlint.com" className="mt-3 block font-display text-2xl md:text-3xl text-foreground hover:text-accent transition-colors">
-                  hello@orlint.com
+                <a href="mailto:connect@orlint.com" className="mt-3 block font-display text-2xl md:text-3xl text-foreground hover:text-accent transition-colors">
+                  connect@orlint.com
                 </a>
               </div>
               <div className="pt-8 border-t border-border/70">

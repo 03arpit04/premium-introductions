@@ -78,7 +78,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
       { title: "Orlint — Connecting Opportunity With Capability" },
-      { name: "description", content: "Orlint helps businesses discover the right partners, suppliers, and opportunities through meaningful introductions." },
+      { name: "description", content: "Orlint helps businesses discover the right partners, solution providers, and opportunities through meaningful introductions." },
       { property: "og:title", content: "Orlint — Connecting Opportunity With Capability" },
       { property: "og:description", content: "We bring. You close. Premium business introductions for serious decision makers." },
       { property: "og:type", content: "website" },

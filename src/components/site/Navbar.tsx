@@ -24,24 +24,25 @@ export function Navbar() {
     <header
       className={`sticky top-0 z-50 w-full transition-all duration-500 ${
         scrolled
-          ? "bg-background/85 backdrop-blur-md border-b border-border/60"
-          : "bg-transparent"
+          ? "border-b border-border/50 bg-background/90 backdrop-blur-md"
+          : "bg-background"
       }`}
     >
-      <div className="container-narrow flex h-20 items-center justify-between">
-        <Link to="/" className="font-display text-2xl tracking-[0.25em] text-foreground">
+      <div className="mx-auto flex h-[68px] w-full max-w-[90rem] items-center justify-between px-6 lg:px-[4.5rem]">
+        <Link
+          to="/"
+          className="font-display text-[22px] tracking-[0.35em] text-foreground"
+        >
           ORLINT
         </Link>
 
-        <nav className="hidden md:flex items-center gap-10">
+        <nav className="hidden items-center gap-10 md:flex">
           {links.map((l) => (
             <Link
               key={l.to}
               to={l.to}
               activeOptions={{ exact: l.to === "/" }}
-              activeProps={{ className: "text-foreground" }}
-              inactiveProps={{ className: "text-muted-foreground hover:text-foreground" }}
-              className="text-[13px] uppercase tracking-[0.18em] transition-colors"
+              className="text-[13px] tracking-[0.01em] text-muted-foreground transition-colors hover:text-foreground"
             >
               {l.label}
             </Link>
@@ -50,15 +51,18 @@ export function Navbar() {
 
         <Link
           to="/contact"
-          className="hidden md:inline-flex items-center gap-2 border border-foreground px-5 py-2.5 text-[12px] uppercase tracking-[0.2em] text-foreground transition-all hover:bg-foreground hover:text-background"
+          className="hidden h-10 w-[258px] items-center justify-center gap-3 rounded-full bg-foreground px-6 text-[11px] font-medium uppercase tracking-[0.18em] text-background transition-all hover:bg-accent hover:text-foreground md:inline-flex"
         >
           Request Introduction
+          <span aria-hidden="true" className="text-sm leading-none">
+            →
+          </span>
         </Link>
 
         <button
           aria-label="Menu"
           onClick={() => setOpen((v) => !v)}
-          className="md:hidden flex flex-col gap-1.5 p-2"
+          className="flex flex-col gap-1.5 p-2 md:hidden"
         >
           <span className={`block h-px w-6 bg-foreground transition-transform ${open ? "translate-y-[7px] rotate-45" : ""}`} />
           <span className={`block h-px w-6 bg-foreground transition-opacity ${open ? "opacity-0" : ""}`} />
@@ -67,8 +71,8 @@ export function Navbar() {
       </div>
 
       {open && (
-        <div className="md:hidden border-t border-border/60 bg-background">
-          <div className="container-narrow flex flex-col py-6 gap-5">
+        <div className="border-t border-border/60 bg-background md:hidden">
+          <div className="container-narrow flex flex-col gap-5 py-6">
             {links.map((l) => (
               <Link
                 key={l.to}
@@ -82,7 +86,7 @@ export function Navbar() {
             <Link
               to="/contact"
               onClick={() => setOpen(false)}
-              className="mt-2 inline-flex justify-center border border-foreground px-5 py-3 text-[12px] uppercase tracking-[0.2em]"
+              className="mt-2 inline-flex justify-center rounded-full bg-foreground px-5 py-3 text-[12px] uppercase tracking-[0.2em] text-background"
             >
               Request Introduction
             </Link>

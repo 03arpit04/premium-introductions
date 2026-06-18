@@ -7,7 +7,7 @@ export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
       { title: "Orlint — Connecting Opportunity With Capability" },
-      { name: "description", content: "Orlint helps businesses discover the right partners, suppliers, and opportunities through meaningful introductions. We bring. You close." },
+      { name: "description", content: "Orlint helps businesses discover the right partners, solution providers, and opportunities through meaningful introductions. We bring. You close." },
       { property: "og:title", content: "Orlint — Connecting Opportunity With Capability" },
       { property: "og:description", content: "Premium business introductions for serious decision makers." },
       { property: "og:url", content: "/" },
@@ -56,16 +56,17 @@ function Hero() {
         </Reveal>
 
         <Reveal delay={120}>
-          <h1 className="mt-8 font-display text-5xl md:text-7xl lg:text-[5.5rem] leading-[0.98] tracking-[-0.02em] max-w-5xl">
-            Connecting Opportunity
-            <br />
-            With <span className="italic text-accent">Capability.</span>
+          <h1 className="mt-8 max-w-5xl font-display text-5xl leading-[0.98] tracking-[0.01em] [word-spacing:0.08em] md:text-7xl lg:text-[5.5rem]">
+            <span className="block">Connecting Opportunity</span>
+            <span className="mt-[0.18em] block">
+              With <span className="italic text-accent">Capability.</span>
+            </span>
           </h1>
         </Reveal>
 
         <Reveal delay={220}>
           <p className="mt-8 max-w-2xl text-lg md:text-xl leading-relaxed text-muted-foreground">
-            Orlint helps businesses discover the right partners, suppliers,
+            Orlint helps businesses discover the right partners, solution providers,
             service providers, and opportunities through meaningful
             introductions.
           </p>
@@ -73,7 +74,7 @@ function Hero() {
 
         <Reveal delay={320}>
           <div className="mt-16 border-t border-border/70 pt-12">
-            <BrandStatement size="xl" />
+            <BrandStatement size="md" />
             <p className="mt-8 max-w-2xl text-base md:text-lg leading-relaxed text-muted-foreground">
               We identify opportunities, facilitate introductions, and open
               doors. You focus on building relationships and closing deals.
@@ -131,7 +132,7 @@ function Relationships() {
                 Business is built on <em className="italic text-accent">relationships.</em>
               </>
             }
-            intro="The right introduction can save months of searching, outreach, and uncertainty. Whether you're looking for suppliers, service providers, partners, or opportunities, Orlint helps connect the right people at the right time."
+            intro="The right introduction can save months of searching, outreach, and uncertainty. Whether you're looking for solution providers, service providers, partners, or opportunities, Orlint helps connect the right people at the right time."
           />
         </Reveal>
 
@@ -155,14 +156,14 @@ function WhatWeDo() {
   const items = [
     {
       title: "Business Matchmaking",
-      copy: "We connect businesses with relevant partners, suppliers, and opportunities.",
+      copy: "We connect businesses with relevant partners, solution providers, and opportunities.",
     },
     {
       title: "Strategic Introductions",
       copy: "Meaningful introductions designed to create real business outcomes.",
     },
     {
-      title: "Supplier Discovery",
+      title: "Capability Discovery",
       copy: "Helping organizations find trusted providers and capabilities.",
     },
     {
@@ -248,8 +249,8 @@ function HowItWorks() {
         </div>
 
         <Reveal>
-          <div className="mt-24 bg-foreground text-background py-20 px-8 text-center">
-            <BrandStatement size="lg" className="text-background [&_span]:text-accent" />
+          <div className="mt-24 border-y border-border/70 bg-gradient-to-r from-transparent via-accent/10 to-transparent px-8 py-20 text-center">
+            <BrandStatement size="lg" className="text-foreground [&_span]:text-accent" />
           </div>
         </Reveal>
       </div>
@@ -261,7 +262,7 @@ function WhoWeWorkWith() {
   const groups = [
     "Business Owners",
     "Service Providers",
-    "Suppliers",
+    "Solution Providers",
     "Consultancies",
     "Staffing Firms",
     "Growing Companies",
@@ -272,7 +273,10 @@ function WhoWeWorkWith() {
     <section className="py-28 md:py-40 bg-secondary/40">
       <div className="container-narrow">
         <Reveal>
-          <SectionHeading eyebrow="Who We Work With" title="Operators, founders, and decision makers." />
+          <SectionHeading
+            eyebrow="Who We Work With"
+            title="Businesses building meaningful partnerships."
+          />
         </Reveal>
 
         <div className="mt-20 grid grid-cols-2 md:grid-cols-4 gap-px bg-border/70 border border-border/70">
@@ -339,7 +343,7 @@ function Philosophy() {
         <Reveal delay={200}>
           <div className="mt-20 max-w-2xl mx-auto text-center space-y-3 font-display text-2xl md:text-3xl text-background/90">
             <p>The right client.</p>
-            <p>The right supplier.</p>
+            <p>The right solution provider.</p>
             <p>The right partner.</p>
             <p>The right opportunity.</p>
           </div>
@@ -413,8 +417,8 @@ function ContactSection() {
             <div className="mt-12 space-y-6 text-sm">
               <div>
                 <div className="text-[11px] uppercase tracking-[0.25em] text-muted-foreground">Email</div>
-                <a href="mailto:hello@orlint.com" className="mt-2 block text-foreground text-lg hover:text-accent transition-colors">
-                  hello@orlint.com
+                <a href="mailto:connect@orlint.com" className="mt-2 block text-foreground text-lg hover:text-accent transition-colors">
+                  connect@orlint.com
                 </a>
               </div>
             </div>

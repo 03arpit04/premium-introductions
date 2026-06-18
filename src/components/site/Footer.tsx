@@ -30,10 +30,10 @@ export function Footer() {
               Contact
             </h4>
             <a
-              href="mailto:hello@orlint.com"
+              href="mailto:connect@orlint.com"
               className="mt-5 inline-block text-sm text-foreground hover:text-accent transition-colors"
             >
-              hello@orlint.com
+              connect@orlint.com
             </a>
           </div>
         </div>

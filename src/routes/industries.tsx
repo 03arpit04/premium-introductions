@@ -6,7 +6,7 @@ export const Route = createFileRoute("/industries")({
   head: () => ({
     meta: [
       { title: "Industries — Orlint" },
-      { name: "description", content: "Orlint works with business owners, suppliers, consultancies, staffing firms, partnership teams, and enterprise buyers across industries." },
+      { name: "description", content: "Orlint works with business owners, solution providers, consultancies, staffing firms, partnership teams, and enterprise buyers across industries." },
       { property: "og:title", content: "Industries — Orlint" },
       { property: "og:description", content: "Who we work with." },
       { property: "og:url", content: "/industries" },
@@ -19,7 +19,7 @@ export const Route = createFileRoute("/industries")({
 const groups = [
   { title: "Business Owners", copy: "Founders and principals looking for the right partners to grow with." },
   { title: "Service Providers", copy: "Agencies and firms seeking aligned clients and channel relationships." },
-  { title: "Suppliers", copy: "Trusted providers ready to be matched with serious buyers." },
+  { title: "Solution Providers", copy: "Trusted providers ready to be matched with serious buyers." },
   { title: "Consultancies", copy: "Advisory firms seeking strategic engagements and partnerships." },
   { title: "Staffing Firms", copy: "Talent businesses looking for enterprise demand and partner channels." },
   { title: "Growing Companies", copy: "Scaling businesses sourcing the capabilities behind their next chapter." },
@@ -35,7 +35,7 @@ function IndustriesPage() {
           <Reveal>
             <SectionHeading
               eyebrow="Who We Work With"
-              title="Operators, founders, and decision makers."
+              title="Businesses building meaningful partnerships."
               intro="We work with organizations who value the right relationship over the next transaction."
             />
           </Reveal>

@@ -26,7 +26,7 @@ function AboutPage() {
             <SectionHeading
               eyebrow="About Orlint"
               title={<>A boutique firm built on <em className="italic text-accent">relationships.</em></>}
-              intro="Orlint is a private introductions firm. We work quietly with business owners, operators, and decision makers to connect them with the partners, suppliers, and opportunities most aligned with their goals."
+              intro="Orlint is a private introductions firm. We work quietly with business owners, operators, and decision makers to connect them with the partners, solution providers, and opportunities most aligned with their goals."
             />
           </Reveal>
         </div>
